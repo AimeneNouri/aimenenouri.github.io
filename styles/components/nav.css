@@ -79,13 +79,11 @@
 }
 
 /*Show*/
-
 .show {
   left: 0;
 }
 
 /*Active*/
-
 .active {
   opacity: 3;
 }
