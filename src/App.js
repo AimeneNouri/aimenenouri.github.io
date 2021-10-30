@@ -49,11 +49,15 @@ const App = () => {
       }
 
       if (e.key === "Enter") {
+        if(input.length === 0){
+          let output = `<div> $ ${input}</div>`;
+          terminalOutput.innerHTML = `${terminalOutput.innerHTML} <div class="terminal-line">${output}</div>`;
+        }
         executeCommand(input);
         userInput.innerHTML = "";
         return;
       }
-      userInput.innerHTML =  '<span style="color:yellow">' + input + e.key + '</span>';
+      userInput.innerHTML =  input + e.key;
     };
 
     const executeCommand = (input) => {
@@ -69,8 +73,8 @@ const App = () => {
         return;
       } else if (!Data.hasOwnProperty(input)) {
         output += `
-          command not found: <span style='color:yellow'>${input}</span>
-          <br> Supported commands: about, experience, education, skills, contact, projects, cv, socials
+          <span style='font-size: 2vh'> command not found: <span style='color:yellow'>${input}</span>
+          <br />Supported commands: about, experience, education, skills, contact, projects, cv, socials </span>
         `;
       } else {
         output += Data[input];

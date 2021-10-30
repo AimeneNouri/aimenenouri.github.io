@@ -1,12 +1,8 @@
-import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'
-
 export const Data = {
-  pwd: `<span style="font-size: 2vh">Hey 👋 Welcome, these are the supported commands:<br />
-    about, experience, education, skills, contact, projects, cv, socials </span>`,
   ls: `
     about   experience   education   skills   contact   cv   socials
     `,
-  help: "Supported commands: <br> <span style='color:yellow'>about, experience, education, skills, contact, projects, cv, socials</span>",
+  help: "Supported commands: <br> <span style='color:yellow, font-size: 2vh'>about, experience, education, skills, contact, projects, cv, socials</span>",
   about: `Hey, I'm Aimene Nouri, <br>
     I am a Computer science Student from Morocco. 
     focused on building and designing beautiful web apps & mobile apps 👨‍💻,<br>
