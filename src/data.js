@@ -1,8 +1,8 @@
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'
 
 export const Data = {
-  pwd: `Hey 👋 Welcome, these are the supported commands:</br>
-    about, experience, education, skills, contact, projects, cv, socials `,
+  pwd: `<span style="font-size: 2vh">Hey 👋 Welcome, these are the supported commands:<br />
+    about, experience, education, skills, contact, projects, cv, socials </span>`,
   ls: `
     about   experience   education   skills   contact   cv   socials
     `,
@@ -28,11 +28,11 @@ export const Data = {
       <strong>10/2020-06/2023: </strong> Computer and Network Engineering at <a href='https://www.emsi.ma/' target="_blank" style='color: white'>Moroccan school of engineering sciences</a>. </br>
     `,
   skills: `
-    <strong>Languages:</strong> JavaScript, PHP, Java, C++, C#, Python.
+    <strong>Languages:</strong> JavaScript, Java, C#, Python.
     <br> <strong>Frameworks:</strong> React, Django.
-    <br> <strong>Tools:</strong> Relational Databases(SQL Server, Oracle Database, MySQL), NoSQl Databases(Firebase, MongoDB), Git & Github.
+    <br> <strong>Tools:</strong> Oracle Database, NoSQl Databases(Firebase, MongoDB), Git & Github.
     <br> <strong>IDE:</strong> Vscode, Android Studio, Eclipse.
-    <br> <strong>Design:</strong> Prototyping, Adobe xd, Photoshop.
+    <br> <strong>Design:</strong> Prototyping, Adobe xd.
     `,
   cv: `<a href='https://www.yumpu.com/fr/document/read/65793263/cv' rel="noreferrer" target='_blank' style='color: #fa1e4e' download>AimeneNouri.pdf</a>`,
   contact: `

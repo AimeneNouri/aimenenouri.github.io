@@ -53,7 +53,7 @@ const App = () => {
         userInput.innerHTML = "";
         return;
       }
-      userInput.innerHTML = input + e.key;
+      userInput.innerHTML =  '<span style="color:yellow">' + input + e.key + '</span>';
     };
 
     const executeCommand = (input) => {
@@ -64,8 +64,8 @@ const App = () => {
       }
       output = `<div> $ ${input}</div>`;
       if (input === "clear") {
-        terminalOutput.innerHTML = `Hey 👋 Welcome, these are the supported commands:</br>
-          about, experience, education, skills, contact, projects, cv, socials `;
+        terminalOutput.innerHTML = `<span style="font-size: 2vh">Hey 👋 Welcome, these are the supported commands:<br/>
+          about, experience, education, skills, contact, projects, cv, socials </span>`;
         return;
       } else if (!Data.hasOwnProperty(input)) {
         output += `
